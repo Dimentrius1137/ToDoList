@@ -1,0 +1,179 @@
+@font-face {
+	font-family: 'RobotoSlab';
+	src: url('RobotoSlab.ttf'); 
+}
+*{
+	font-family: RobotoSlab;
+}
+body{
+	/* background: url("hitori.jpg");  */
+	background-size: cover;
+}
+
+.tools-cont{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.tools{
+	width: 50%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid rgb(154, 169, 236);
+	border-radius: 10px;
+	
+}
+
+.cont{
+	width: 100%;
+	min-height: 60px;
+	background-color: rgb(216, 223, 253);
+	border-radius: 5px;
+	opacity: 0.9;
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-between;
+}
+.inner-cont{
+	display: flex;
+	justify-content: start;
+	flex-direction: row;
+	align-items: start;
+
+}
+
+.text{
+	position: relative;
+	top: 30%;
+	word-break:break-all;
+}
+
+.task-list{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+img{
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+}
+#spisok{
+	padding: 0;
+	width: 50%;
+
+}
+
+.delete {
+	float: right;
+	color: rgb(85, 85, 85);
+	font-size: 20px;
+	margin: 10px;
+	height: 40px;
+	background-color: rgb(154, 169, 236);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	top: 10px;
+	position: sticky;
+	text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.delete:hover{
+	color: white;
+	transition: 0.5s;
+}
+
+.inp{
+	height: 35px;
+	border-style: none;
+	outline: 0px solid rgb(154, 169, 236);
+	background-color: rgb(216, 223, 253);
+	border-radius: 5px;
+	font-size: 17px;
+	transition: 0.1s;
+	padding-left: 10px;
+	margin-right: 20px;
+}
+.inp:focus{
+	outline: 3px solid rgb(154, 169, 236);
+	transition: 0.1s;
+}
+.buton {
+	margin-left: 50px;
+	background-color: rgb(154, 169, 236);
+	border: none;
+	font-size: 20px;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	color: rgb(85, 85, 85);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+
+  }
+  .buton:active {
+	top: 2px;
+	color: white;
+	transition: 0.3s ;
+
+  }
+@media (max-width: 1080px) {
+	.tools{
+		width: 95%;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 3px solid rgb(154, 169, 236);
+		border-radius: 10px;
+
+	}
+	#spisok{
+		padding: 0;
+		width: 100%;
+		margin-left: 10px;
+		margin-right: 10px;
+	
+	}
+	.buton {
+		margin-left: 10px;
+		margin-right: 10px;
+		background-color: rgb(154, 169, 236);
+		border: none;
+		font-size: 20px;
+		border-radius: 5px;
+		width: 150px;
+		height: 40px;
+		color: rgb(85, 85, 85);
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.3);
+	   box-shadow: 7px 7px 20px 0px rgba(0,0,0,.1),
+	   4px 4px 5px 0px rgba(0,0,0,.1);
+	
+	  }
+	  .inp{
+		height: 35px;
+		margin-left: 20px;
+		margin-right: 10px;
+		border-style: none;
+		outline: 0px solid rgb(154, 169, 236);
+		background-color: rgb(216, 223, 253);
+		border-radius: 5px;
+		font-size: 17px;
+		transition: 0.1s;
+		padding-left: 10px;
+	}
+}
+
